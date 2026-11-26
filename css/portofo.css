@@ -1,6 +1,10 @@
+html {
+  font-size: 62,5%;
+}
+
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1,4rem;
   background-color: #eaf6ff;
   color: #1f3a52;
   margin: 0;
@@ -97,21 +101,32 @@ border: 1px solid black;
 }
 
 .projecten-container {
-    display: grid;
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .project-box {
     background-color: #ffffff;
     border: 1px solid #cfe6fa;
-    height: 180px;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .project-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display:block
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -152,7 +167,7 @@ footer {
 @media screen and (min-width: 768px) {
   .container {
     display: flex;
-    gap: 15px;
+    gap: 1,5rem;
   }
 
   .blok {
@@ -166,19 +181,19 @@ footer {
 
 @media screen and (max-width: 767px) {
   header {
-    padding: 10px;
+    padding: 1rem;
   }
 
   nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 0,8rem;
   }
 
   nav a {
     margin: 5px;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   section {
@@ -196,22 +211,22 @@ footer {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 2,4rem;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   p {
-    font-size: 14px;
+    font-size: 1,4rem;
   }
 
   .email-section {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   footer {
-    font-size: 13px;
+    font-size: 1,3rem;
   }
 }
